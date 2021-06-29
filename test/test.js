@@ -22,8 +22,8 @@
 
 var tape = require( 'tape' );
 var dtypes = require( '@stdlib/ndarray-dtypes' );
-var isSafeCast = require( '@stdlib/ndarray-base-assert-is-safe/data/type-cast' );
-var isSameKindCast = require( '@stdlib/ndarray-base-assert-is-same-kind/data/type-cast' );
+var isSafeCast = require( '@stdlib/ndarray-base-assert-is-safe-data-type-cast' );
+var isSameKindCast = require( '@stdlib/ndarray-base-assert-is-same-kind-data-type-cast' );
 var isAllowedCast = require( './../lib' );
 
 

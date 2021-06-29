@@ -49,7 +49,7 @@ npm install @stdlib/ndarray-base-assert-is-allowed-data-type-cast
 ## Usage
 
 ```javascript
-var isAllowedCast = require( '@stdlib/ndarray-base-assert-is-allowed/data/type-cast' );
+var isAllowedCast = require( '@stdlib/ndarray-base-assert-is-allowed-data-type-cast' );
 ```
 
 #### isAllowedCast( from, to, casting )
@@ -95,7 +95,7 @@ The following [`casting`][@stdlib/ndarray/casting-modes] modes are supported:
 ```javascript
 var dtypes = require( '@stdlib/ndarray-dtypes' );
 var modes = require( '@stdlib/ndarray-casting-modes' );
-var isAllowedCast = require( '@stdlib/ndarray-base-assert-is-allowed/data/type-cast' );
+var isAllowedCast = require( '@stdlib/ndarray-base-assert-is-allowed-data-type-cast' );
 
 var DTYPES;
 var MODES;
