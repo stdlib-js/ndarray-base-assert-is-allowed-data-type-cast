@@ -1,0 +1,43 @@
+{
+  "name": "@stdlib/ndarray-base-assert-is-allowed-data-type-cast",
+  "version": "0.0.0",
+  "description": "Determine if an ndarray data type can be cast to another ndarray data type according to a specified casting mode.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./index.mjs",
+  "homepage": "https://stdlib.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stdlib-js/stdlib/issues"
+  },
+  "keywords": [
+    "stdlib",
+    "stdtypes",
+    "types",
+    "base",
+    "ndarray",
+    "casting",
+    "cast",
+    "mode",
+    "promotion",
+    "test",
+    "assert",
+    "check",
+    "validate",
+    "validation",
+    "valid",
+    "multidimensional",
+    "array",
+    "utilities",
+    "utility",
+    "utils",
+    "util"
+  ],
+  "funding": {
+    "type": "patreon",
+    "url": "https://www.patreon.com/athan"
+  }
+}
