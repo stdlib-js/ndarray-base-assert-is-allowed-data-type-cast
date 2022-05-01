@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-assert-is-allowed-data-type-cast",
-  "version": "0.0.0",
+  "version": "0.0.9",
   "description": "Determine if an ndarray data type can be cast to another ndarray data type according to a specified casting mode.",
   "license": "Apache-2.0",
   "author": {
