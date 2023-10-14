@@ -45,19 +45,35 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-base-assert-is-allowed-data-type-cast
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isAllowedCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast@deno/mod.js';
+var isAllowedCast = require( '@stdlib/ndarray-base-assert-is-allowed-data-type-cast' );
 ```
 
 #### isAllowedCast( from, to, casting )
 
-Returns a `boolean` indicating whether an ndarray [data type][@stdlib/ndarray/dtypes] can be cast to another ndarray [data type][@stdlib/ndarray/dtypes] according to a specified [`casting`][@stdlib/ndarray/casting-modes] mode.
+Returns a boolean indicating whether an ndarray [data type][@stdlib/ndarray/dtypes] can be cast to another ndarray [data type][@stdlib/ndarray/dtypes] according to a specified [`casting`][@stdlib/ndarray/casting-modes] mode.
 
 ```javascript
 var bool = isAllowedCast( 'float32', 'float64', 'safe' );
@@ -72,6 +88,7 @@ The following [`casting`][@stdlib/ndarray/casting-modes] modes are supported:
 -   `none`: only allow casting between identical types.
 -   `equiv`: allow casting between identical and byte swapped types.
 -   `safe`: only allow "safe" casts.
+-   `mostly-safe`: allow "safe" casts and, for floating-point data types, downcasts.
 -   `same-kind`: allow "safe" casts and casts within the same kind (e.g., between signed integers or between floats).
 -   `unsafe`: allow casting between all types (including between integers and floats).
 
@@ -96,9 +113,9 @@ The following [`casting`][@stdlib/ndarray/casting-modes] modes are supported:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@deno/mod.js';
-import modes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-casting-modes@deno/mod.js';
-import isAllowedCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast@deno/mod.js';
+var dtypes = require( '@stdlib/ndarray-dtypes' );
+var modes = require( '@stdlib/ndarray-casting-modes' );
+var isAllowedCast = require( '@stdlib/ndarray-base-assert-is-allowed-data-type-cast' );
 
 var DTYPES;
 var MODES;
@@ -155,7 +172,7 @@ for ( i = 0; i < DTYPES.length; i++ ) {
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -215,9 +232,9 @@ Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast/main/LICENSE
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/deno
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
-[@stdlib/ndarray/casting-modes]: https://github.com/stdlib-js/ndarray-casting-modes/tree/deno
+[@stdlib/ndarray/casting-modes]: https://github.com/stdlib-js/ndarray-casting-modes
 
 </section>
 
