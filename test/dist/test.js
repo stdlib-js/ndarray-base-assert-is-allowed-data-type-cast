@@ -1,7 +1,7 @@
 /**
 * @license Apache-2.0
 *
-* Copyright (c) 2018 The Stdlib Authors.
+* Copyright (c) 2023 The Stdlib Authors.
 *
 * Licensed under the Apache License, Version 2.0 (the "License");
 * you may not use this file except in compliance with the License.
@@ -21,130 +21,13 @@
 // MODULES //
 
 var tape = require( 'tape' );
-var dtypes = require( '@stdlib/ndarray-dtypes' );
-var isSafeCast = require( '@stdlib/ndarray-base-assert-is-safe-data-type-cast' );
-var isSameKindCast = require( '@stdlib/ndarray-base-assert-is-same-kind-data-type-cast' );
-var isAllowedCast = require( './../../dist' );
-
-
-// VARIABLES //
-
-var DTYPES = dtypes();
+var main = require( './../../dist' );
 
 
 // TESTS //
 
-tape( 'main export is a function', function test( t ) {
+tape( 'main export is defined', function test( t ) {
 	t.ok( true, __filename );
-	t.strictEqual( typeof isAllowedCast, 'function', 'main export is a function' );
-	t.end();
-});
-
-tape( 'the function returns a boolean indicating if an ndarray data type can be cast to another ndarray data type (casting=unsafe)', function test( t ) {
-	var expected;
-	var actual;
-	var dt1;
-	var dt2;
-	var i;
-	var j;
-
-	expected = true;
-
-	for ( i = 0; i < DTYPES.length; i++ ) {
-		dt1 = DTYPES[ i ];
-		for ( j = 0; j < DTYPES.length; j++ ) {
-			dt2 = DTYPES[ j ];
-			actual = isAllowedCast( dt1, dt2, 'unsafe' );
-			t.strictEqual( actual, expected, 'returns expected value. from: '+dt1+'. to: '+dt2+'.' );
-		}
-	}
-	t.end();
-});
-
-tape( 'the function returns a boolean indicating if an ndarray data type can be cast to another ndarray data type (casting=safe)', function test( t ) {
-	var expected;
-	var actual;
-	var dt1;
-	var dt2;
-	var i;
-	var j;
-
-	for ( i = 0; i < DTYPES.length; i++ ) {
-		dt1 = DTYPES[ i ];
-		for ( j = 0; j < DTYPES.length; j++ ) {
-			dt2 = DTYPES[ j ];
-			expected = isSafeCast( dt1, dt2 );
-			actual = isAllowedCast( dt1, dt2, 'safe' );
-			t.strictEqual( actual, expected, 'returns expected value. from: '+dt1+'. to: '+dt2+'.' );
-		}
-	}
-	t.end();
-});
-
-tape( 'the function returns a boolean indicating if an ndarray data type can be cast to another ndarray data type (casting=same-kind)', function test( t ) {
-	var expected;
-	var actual;
-	var dt1;
-	var dt2;
-	var i;
-	var j;
-
-	for ( i = 0; i < DTYPES.length; i++ ) {
-		dt1 = DTYPES[ i ];
-		for ( j = 0; j < DTYPES.length; j++ ) {
-			dt2 = DTYPES[ j ];
-			expected = isSameKindCast( dt1, dt2 );
-			actual = isAllowedCast( dt1, dt2, 'same-kind' );
-			t.strictEqual( actual, expected, 'returns expected value. from: '+dt1+'. to: '+dt2+'.' );
-		}
-	}
-	t.end();
-});
-
-tape( 'the function returns a boolean indicating if an ndarray data type can be cast to another ndarray data type (casting=none)', function test( t ) {
-	var expected;
-	var actual;
-	var dt1;
-	var dt2;
-	var i;
-	var j;
-
-	for ( i = 0; i < DTYPES.length; i++ ) {
-		dt1 = DTYPES[ i ];
-		for ( j = 0; j < DTYPES.length; j++ ) {
-			dt2 = DTYPES[ j ];
-			if ( dt1 === dt2 ) {
-				expected = true;
-			} else {
-				expected = false;
-			}
-			actual = isAllowedCast( dt1, dt2, 'none' );
-			t.strictEqual( actual, expected, 'returns expected value. from: '+dt1+'. to: '+dt2+'.' );
-		}
-	}
-	t.end();
-});
-
-tape( 'the function returns a boolean indicating if an ndarray data type can be cast to another ndarray data type (casting=equiv)', function test( t ) {
-	var expected;
-	var actual;
-	var dt1;
-	var dt2;
-	var i;
-	var j;
-
-	for ( i = 0; i < DTYPES.length; i++ ) {
-		dt1 = DTYPES[ i ];
-		for ( j = 0; j < DTYPES.length; j++ ) {
-			dt2 = DTYPES[ j ];
-			if ( dt1 === dt2 ) {
-				expected = true;
-			} else {
-				expected = false;
-			}
-			actual = isAllowedCast( dt1, dt2, 'equiv' );
-			t.strictEqual( actual, expected, 'returns expected value. from: '+dt1+'. to: '+dt2+'.' );
-		}
-	}
+	t.strictEqual( main !== void 0, true, 'main export is defined' );
 	t.end();
 });

@@ -39,6 +39,7 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
+    "@stdlib/ndarray-base-assert-is-mostly-safe-data-type-cast": "github:stdlib-js/ndarray-base-assert-is-mostly-safe-data-type-cast#main",
     "@stdlib/ndarray-base-assert-is-safe-data-type-cast": "^0.1.0",
     "@stdlib/ndarray-base-assert-is-same-kind-data-type-cast": "^0.1.0",
     "@stdlib/ndarray-casting-modes": "^0.1.1",
