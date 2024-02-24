@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-assert-is-allowed-data-type-cast",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Determine if an ndarray data type can be cast to another ndarray data type according to a specified casting mode.",
   "license": "Apache-2.0",
   "author": {
@@ -39,19 +39,19 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/ndarray-base-assert-is-mostly-safe-data-type-cast": "^0.2.0",
-    "@stdlib/ndarray-base-assert-is-safe-data-type-cast": "^0.2.0",
-    "@stdlib/ndarray-base-assert-is-same-kind-data-type-cast": "^0.2.0",
-    "@stdlib/ndarray-casting-modes": "^0.2.0",
-    "@stdlib/ndarray-dtypes": "^0.2.0",
-    "@stdlib/utils-library-manifest": "^0.2.0"
+    "@stdlib/ndarray-base-assert-is-mostly-safe-data-type-cast": "^0.2.1",
+    "@stdlib/ndarray-base-assert-is-safe-data-type-cast": "^0.2.1",
+    "@stdlib/ndarray-base-assert-is-same-kind-data-type-cast": "^0.2.1",
+    "@stdlib/ndarray-casting-modes": "^0.2.1",
+    "@stdlib/ndarray-dtypes": "^0.2.1",
+    "@stdlib/utils-library-manifest": "^0.2.1"
   },
   "devDependencies": {
-    "@stdlib/assert-is-boolean": "^0.1.1",
+    "@stdlib/assert-is-boolean": "^0.2.1",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
-    "@stdlib/bench-harness": "^0.2.0"
+    "@stdlib/bench-harness": "^0.2.1"
   },
   "engines": {
     "node": ">=0.10.0",
