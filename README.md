@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isAllowedCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast@esm/index.mjs';
+import isAllowedCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast@v0.2.2-esm/index.mjs';
 ```
 
 #### isAllowedCast( from, to, casting )
@@ -104,7 +104,7 @@ The following [`casting`][@stdlib/ndarray/casting-modes] modes are supported:
 
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-dtypes@esm/index.mjs';
 import modes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-casting-modes@esm/index.mjs';
-import isAllowedCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast@esm/index.mjs';
+import isAllowedCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast@v0.2.2-esm/index.mjs';
 
 var DTYPES;
 var MODES;
