@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isAllowedCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast@deno/mod.js';
+import isAllowedCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast@v0.3.0-deno/mod.js';
 ```
 
 #### isAllowedCast( from, to, casting )
@@ -102,7 +102,7 @@ import unzip from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-unzip@deno/mod.js
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-strings@deno/mod.js';
 import modes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-casting-modes@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import isAllowedCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast@deno/mod.js';
+import isAllowedCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast@v0.3.0-deno/mod.js';
 
 // Generate a list of dtype pairs and casting modes:
 var pairs = nCartesianProduct( dtypes(), dtypes(), modes() );
