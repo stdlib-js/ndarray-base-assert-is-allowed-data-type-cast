@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/ndarray-base-assert-is-allowed-data-type-cast",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "Determine if an ndarray data type can be cast to another ndarray data type according to a specified casting mode.",
   "license": "Apache-2.0",
   "author": {
@@ -40,8 +40,8 @@
   },
   "dependencies": {
     "@stdlib/ndarray-base-assert-is-mostly-safe-data-type-cast": "^0.2.2",
-    "@stdlib/ndarray-base-assert-is-safe-data-type-cast": "^0.2.2",
-    "@stdlib/ndarray-base-assert-is-same-kind-data-type-cast": "^0.2.2",
+    "@stdlib/ndarray-base-assert-is-safe-data-type-cast": "^0.3.0",
+    "@stdlib/ndarray-base-assert-is-same-kind-data-type-cast": "^0.3.0",
     "@stdlib/ndarray-base-dtype-resolve-str": "^0.2.2",
     "@stdlib/ndarray-casting-modes": "^0.2.2",
     "@stdlib/ndarray-dtypes": "^0.3.0",
@@ -54,7 +54,7 @@
     "@stdlib/console-log-each-map": "github:stdlib-js/console-log-each-map#main",
     "@stdlib/dstructs-struct": "github:stdlib-js/dstructs-struct#main",
     "@stdlib/ndarray-base-dtype-str2enum": "^0.2.2",
-    "@stdlib/ndarray-base-dtype-strings": "github:stdlib-js/ndarray-base-dtype-strings#main",
+    "@stdlib/ndarray-base-dtype-strings": "^0.1.0",
     "@stdlib/ndarray-dtype-ctor": "github:stdlib-js/ndarray-dtype-ctor#main",
     "@stdlib/utils-unzip": "^0.2.2",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
