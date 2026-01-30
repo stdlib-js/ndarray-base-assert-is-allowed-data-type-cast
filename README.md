@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/ndarray-base-assert-is-allowed-data-type-cast
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import isAllowedCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast@deno/mod.js';
+var isAllowedCast = require( '@stdlib/ndarray-base-assert-is-allowed-data-type-cast' );
 ```
 
 #### isAllowedCast( from, to, casting )
@@ -97,12 +115,12 @@ The following [casting][@stdlib/ndarray/casting-modes] modes are supported:
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import nCartesianProduct from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-base-n-cartesian-product@deno/mod.js';
-import unzip from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-unzip@deno/mod.js';
-import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-strings@deno/mod.js';
-import modes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-casting-modes@deno/mod.js';
-import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import isAllowedCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast@deno/mod.js';
+var nCartesianProduct = require( '@stdlib/array-base-n-cartesian-product' );
+var unzip = require( '@stdlib/utils-unzip' );
+var dtypes = require( '@stdlib/ndarray-base-dtype-strings' );
+var modes = require( '@stdlib/ndarray-casting-modes' );
+var logEachMap = require( '@stdlib/console-log-each-map' );
+var isAllowedCast = require( '@stdlib/ndarray-base-assert-is-allowed-data-type-cast' );
 
 // Generate a list of dtype pairs and casting modes:
 var pairs = nCartesianProduct( dtypes(), dtypes(), modes() );
@@ -143,7 +161,7 @@ logEachMap( '%s => %s. %s: %s.', lists[ 0 ], lists[ 1 ], lists[ 2 ], isAllowedCa
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -173,8 +191,8 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 [npm-image]: http://img.shields.io/npm/v/@stdlib/ndarray-base-assert-is-allowed-data-type-cast.svg
 [npm-url]: https://npmjs.org/package/@stdlib/ndarray-base-assert-is-allowed-data-type-cast
 
-[test-image]: https://github.com/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast/actions/workflows/test.yml/badge.svg?branch=main
-[test-url]: https://github.com/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast/actions/workflows/test.yml?query=branch:main
+[test-image]: https://github.com/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast/actions/workflows/test.yml/badge.svg?branch=v0.3.0
+[test-url]: https://github.com/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast/actions/workflows/test.yml?query=branch:v0.3.0
 
 [coverage-image]: https://img.shields.io/codecov/c/github/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast/main.svg
 [coverage-url]: https://codecov.io/github/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast?branch=main
@@ -206,9 +224,9 @@ Copyright &copy; 2016-2026. The Stdlib [Authors][stdlib-authors].
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast/main/LICENSE
 
-[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes/tree/deno
+[@stdlib/ndarray/dtypes]: https://github.com/stdlib-js/ndarray-dtypes
 
-[@stdlib/ndarray/casting-modes]: https://github.com/stdlib-js/ndarray-casting-modes/tree/deno
+[@stdlib/ndarray/casting-modes]: https://github.com/stdlib-js/ndarray-casting-modes
 
 </section>
 
