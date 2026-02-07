@@ -1,4 +1,0 @@
-// Copyright (c) 2026 The Stdlib Authors. License is Apache-2.0: http://www.apache.org/licenses/LICENSE-2.0
-/// <reference types="./index.d.ts" />
-import s from"https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-safe-data-type-cast@v0.3.0-esm/index.mjs";import e from"https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-mostly-safe-data-type-cast@v0.3.0-esm/index.mjs";import t from"https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-same-kind-data-type-cast@v0.3.0-esm/index.mjs";import a from"https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-resolve-str@v0.2.2-esm/index.mjs";function r(r,d,n){return"unsafe"===n||(a(r)===a(d)||"none"!==n&&"equiv"!==n&&("safe"===n?s(r,d):"mostly-safe"===n?e(r,d):t(r,d)))}export{r as default};
-//# sourceMappingURL=index.mjs.map
