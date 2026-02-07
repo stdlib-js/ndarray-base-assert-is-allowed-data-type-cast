@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import isAllowedCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast@deno/mod.js';
+```
+The previous example will load the latest bundled code from the deno branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast/tags). For example,
+
+```javascript
 import isAllowedCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast@v0.3.1-deno/mod.js';
 ```
 
@@ -102,7 +107,7 @@ import unzip from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-unzip@deno/mod.js
 import dtypes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-dtype-strings@deno/mod.js';
 import modes from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-casting-modes@deno/mod.js';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@deno/mod.js';
-import isAllowedCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast@v0.3.1-deno/mod.js';
+import isAllowedCast from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-assert-is-allowed-data-type-cast@deno/mod.js';
 
 // Generate a list of dtype pairs and casting modes:
 var pairs = nCartesianProduct( dtypes(), dtypes(), modes() );
